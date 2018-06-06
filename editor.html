@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<!--引入wangEditor.css-->
+<link rel="stylesheet" type="text/css" href="css/wangEditor.min.css">
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/wangEditor.min.js"></script>
+<div class="main-post-list hidden">
+<div id="editorDiv">
+    <p>请输入内容...</p>
+</div>
+  {% include pagination.html %}
+</div>
+<!--这里引用jquery和wangEditor.js-->
+<script type="text/javascript">
+    var editor = new wangEditor('editorDiv');
+    editor.create();
+</script>
